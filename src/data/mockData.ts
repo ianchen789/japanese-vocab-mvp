@@ -11,6 +11,18 @@ import {
   additionalSentences,
   additionalWords,
 } from './extendedMockData'
+import {
+  additionalPhrases2,
+  additionalQuizQuestions2,
+  additionalSentences2,
+  additionalWords2,
+} from './extendedMockData2'
+import {
+  additionalPhrases3,
+  additionalQuizQuestions3,
+  additionalSentences3,
+  additionalWords3,
+} from './extendedMockData3'
 import { splitSentenceIntoFragments } from '../utils/text'
 
 export const words: Word[] = [
@@ -125,6 +137,8 @@ export const words: Word[] = [
     isActive: true,
   },
   ...additionalWords,
+  ...additionalWords2,
+  ...additionalWords3,
 ]
 
 export const phrases: Phrase[] = [
@@ -289,6 +303,8 @@ export const phrases: Phrase[] = [
     usageOrder: 2,
   },
   ...additionalPhrases,
+  ...additionalPhrases2,
+  ...additionalPhrases3,
 ]
 
 export const sentences: Sentence[] = [
@@ -832,6 +848,8 @@ export const sentences: Sentence[] = [
     isDailyLife: true,
   },
   ...additionalSentences,
+  ...additionalSentences2,
+  ...additionalSentences3,
 ]
 
 const rawQuizQuestions: QuizQuestion[] = [
@@ -1575,6 +1593,8 @@ const rawQuizQuestions: QuizQuestion[] = [
     difficultyLevel: 2,
   },
   ...additionalQuizQuestions,
+  ...additionalQuizQuestions2,
+  ...additionalQuizQuestions3,
 ]
 
 function toKanaOption(value: string) {
